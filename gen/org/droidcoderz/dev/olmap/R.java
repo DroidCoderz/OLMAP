@@ -10,18 +10,87 @@ package org.droidcoderz.dev.olmap;
 public final class R {
     public static final class attr {
     }
+    public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+         */
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+    }
     public static final class drawable {
-        public static final int gradient_background=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int splasher=0x7f020002;
+        public static final int about_default=0x7f020000;
+        public static final int about_pressed=0x7f020001;
+        public static final int about_selected=0x7f020002;
+        public static final int actionbar_background=0x7f020003;
+        public static final int actionbar_compat_background=0x7f020004;
+        public static final int background_plane=0x7f020005;
+        public static final int btn_about=0x7f020006;
+        public static final int btn_exit=0x7f020007;
+        public static final int btn_mapfilebrowser=0x7f020008;
+        public static final int btn_mapview=0x7f020009;
+        public static final int btn_notes=0x7f02000a;
+        public static final int btn_search=0x7f02000b;
+        public static final int exit_default=0x7f02000c;
+        public static final int exit_pressed=0x7f02000d;
+        public static final int exit_selected=0x7f02000e;
+        public static final int gradient_background=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int map_default=0x7f020011;
+        public static final int map_pressed=0x7f020012;
+        public static final int map_selected=0x7f020013;
+        public static final int mapdrawer_default=0x7f020014;
+        public static final int mapdrawer_pressed=0x7f020015;
+        public static final int mapdrawer_selected=0x7f020016;
+        public static final int notebook_default=0x7f020017;
+        public static final int notebook_pressed=0x7f020018;
+        public static final int notebook_selected=0x7f020019;
+        public static final int olmap_logo=0x7f02001a;
+        public static final int olmarker=0x7f02001b;
+        public static final int point=0x7f02001c;
+        public static final int search_default=0x7f02001d;
+        public static final int search_pressed=0x7f02001e;
+        public static final int search_selected=0x7f02001f;
+        public static final int sky_small=0x7f020020;
+        public static final int splasher=0x7f020021;
     }
     public static final class id {
-        public static final int imgLogo=0x7f050000;
+        public static final int btn_about=0x7f080005;
+        public static final int btn_exit=0x7f080006;
+        public static final int btn_mapfilebrowser=0x7f080003;
+        public static final int btn_mapview=0x7f080001;
+        public static final int btn_notes=0x7f080004;
+        public static final int btn_search=0x7f080002;
+        public static final int home_root=0x7f080000;
+        public static final int imgLogo=0x7f08000f;
+        public static final int info_fragment=0x7f080008;
+        public static final int mainView=0x7f080009;
+        public static final int mapView=0x7f08000a;
+        public static final int map_fragment=0x7f080007;
+        public static final int my_gps_location=0x7f08000c;
+        public static final int seekBar=0x7f08000d;
+        public static final int textView=0x7f08000e;
+        public static final int zoomcontrols=0x7f08000b;
     }
     public static final class layout {
-        public static final int splash=0x7f030000;
+        public static final int about_layout=0x7f030000;
+        public static final int actionbar_layout=0x7f030001;
+        public static final int dashboard_layout=0x7f030002;
+        public static final int footer_layout=0x7f030003;
+        public static final int fragment_layout=0x7f030004;
+        public static final int fragment_main=0x7f030005;
+        public static final int notes_layout=0x7f030006;
+        public static final int olmap_mapview=0x7f030007;
+        public static final int splash=0x7f030008;
+    }
+    public static final class raw {
+        public static final int man3d=0x7f040000;
+        public static final int milktruck=0x7f040001;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
+        public static final int app_name=0x7f060000;
+    }
+    public static final class style {
+        public static final int ActionBarCompat=0x7f070000;
+        public static final int DashboardButton=0x7f070001;
+        public static final int FooterBar=0x7f070002;
     }
 }

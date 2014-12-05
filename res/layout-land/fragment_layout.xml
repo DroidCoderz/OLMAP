@@ -1,0 +1,49 @@
+<org.droidcoderz.dev.olmap.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+	<!--  Map View Button -->
+    <Button
+        android:id="@+id/btn_mapview"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_mapview"
+        android:text="Map View" />
+    
+	<!--  POI Search Button -->
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_search"
+        android:text="POI Search" />
+    
+	<!--  Map Drawer Button -->
+    <Button
+        android:id="@+id/btn_mapfilebrowser"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_mapfilebrowser"
+        android:text="Map Drawer" />
+	
+    <!--  Notes Button -->
+    <Button
+        android:id="@+id/btn_notes"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_notes"
+        android:text="Notes" />
+
+    <!--  About Button -->
+    <Button
+        android:id="@+id/btn_about"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_about"
+        android:text="About" />
+
+    <!--  Exit Button -->
+    <Button
+        android:id="@+id/btn_exit"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_exit"
+        android:text="Exit" />
+
+</org.droidcoderz.dev.olmap.DashboardLayout>
