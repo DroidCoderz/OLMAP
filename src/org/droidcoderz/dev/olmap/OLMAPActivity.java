@@ -108,9 +108,9 @@ public class OLMAPActivity extends Activity {
         MapDatabase mapDatabase = new MapDatabase();
         mapDatabase.closeFile();
                 
-        String mapFilePath = Environment.getExternalStorageDirectory().getPath()+ "/newyork.map"; 
+        String mapFilePath = Environment.getExternalStorageDirectory().getPath()+ "/azerbaijan.map"; 
         
-        File mapFile =  new File(Environment.getExternalStorageDirectory(), "/maps/newyork.map");
+        File mapFile =  new File(Environment.getExternalStorageDirectory(), "/maps/azerbaijan.map");
         
         FileOpenResult fileOpenResult = mapDatabase.openFile(mapFile);
         
@@ -146,8 +146,8 @@ public class OLMAPActivity extends Activity {
             e.printStackTrace();
         }
         
-        // Location: Scarsdale
-        mapView.setFocusPoint(mapView.getLayers().getBaseLayer().getProjection().fromWgs84(-73.7635316f, 40.9690798f));
+        // Focus Point Location: Azerbaijan
+        mapView.setFocusPoint(mapView.getLayers().getBaseLayer().getProjection().fromWgs84(49.867092f, 40.409262f));
 
         // rotation - 0 = north-up
         mapView.setMapRotation(0f);
@@ -194,10 +194,10 @@ public class OLMAPActivity extends Activity {
         MarkerStyle SCAmarkerStyle = MarkerStyle.builder().setBitmap(SCApointMarker).setSize(0.5f).setColor(Color.WHITE).build();
         
      // define label what is shown when you click on marker
-        Label SCAmarkerLabel = new DefaultLabel("Village of Scarsdale", "Village Hall");
+        Label SCAmarkerLabel = new DefaultLabel("Baku", "Azerbaijan");
         
      // define location of the marker, it must be converted to base map coordinate system
-        MapPos markerLocation = mapLayer.getProjection().fromWgs84(-73.7967994f, 40.9884312f);
+        MapPos markerLocation = mapLayer.getProjection().fromWgs84(49.867092f, 40.409262f);
         
      // create layer and add object to the layer, finally add layer to the map. 
      // All overlay layers must be same projection as base layer, so we reuse it

@@ -4,24 +4,50 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="19" />
+    <uses-sdk 
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    
+<!-- permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+      <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+    
     <application
+        android:allowBackup="true"
+        android:launchMode="singleTask"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".MapActivity"
+            android:name="org.droidcoderz.dev.olmap.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name="org.droidcoderz.dev.olmap.DashboardActivity"></activity>
+<!--         <activity android:name="com.promptnet.mobiledev.mapkit.track.GPSInfo"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.fragmentmap.FragmentMapActivity"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.fragmentmap.InfoActivity"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.mapkit.AboutActivity"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.mapkit.mapdrawer.MapDrawerActivity"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.mapkit.GPSLocation"></activity> -->
+<!--         <activity android:name="com.promptnet.mobiledev.mapkit.notes.NotesActivity"></activity> -->
     </application>
 
 </manifest>
